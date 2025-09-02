@@ -28,6 +28,7 @@ const voteAnecdote = () => {
   newVotes[selected] += 1
   setVotes(newVotes)
 }
+//step3
 //izbirane na anekdota s nai-mnogo glasove
 const maxVotes = Math.max(...votes)
 const topIndex = votes.indexOf(maxVotes)
