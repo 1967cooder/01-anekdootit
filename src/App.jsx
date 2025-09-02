@@ -41,9 +41,15 @@ const topIndex = votes.indexOf(maxVotes)
       <button onClick={voteAnecdote}>vote</button>
       <button onClick={nextAnecdote}>next anecdote</button>
 
-      <h2>Anecdote with mosta votes</h2>
+      <h2>Anecdote with most votes</h2>
+      {maxVotes === 0 ? (
+        <p>No votes yet</p>
+      ) : (
+     <>
       <p>{anecdotes[topIndex]}</p>
       <p>has{votes[topIndex]}votes</p>
+      </>
+      )}
     </div>
   )
 }
