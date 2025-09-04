@@ -24,6 +24,7 @@ const nextAnecdote = () => {
 }
 //step2 Funcija za glasuvane
 const voteAnecdote = () => {
+  console.log(votes, selected)
   const newVotes = [...votes]
   newVotes[selected] += 1
   setVotes(newVotes)
